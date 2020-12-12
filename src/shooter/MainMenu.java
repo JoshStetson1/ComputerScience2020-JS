@@ -47,8 +47,8 @@ public class MainMenu implements MouseListener{
             int length = metrics.stringWidth("SHOTGUN");
             g.drawString("SHOTGUN", s.getWidth()/2-length/2, 200);
 
-            length = metrics.stringWidth("SMG");
-            g.drawString("SMG", s.getWidth()/2-length/2, 300);
+            length = metrics.stringWidth("MACHINE GUN");
+            g.drawString("MACHINE GUN", s.getWidth()/2-length/2, 300);
 
             length = metrics.stringWidth("SNIPER");
             g.drawString("SNIPER", s.getWidth()/2-length/2, 400);
@@ -69,7 +69,7 @@ public class MainMenu implements MouseListener{
                 if(y > 150 && y < 200 || y > 250 && y < 300 || y > 350 && y < 400) s.state = "play";//if a gun is click, start the game
                 
                 if(y > 150 && y < 200) s.p.weapon = new Weapon(s, false, 5, 15, 5, 0.5, 20);//shotgun
-                if(y > 250 && y < 300) s.p.weapon = new Weapon(s, true, 1, 15, 3, 0.1, 15);//smg
+                if(y > 250 && y < 300) s.p.weapon = new Weapon(s, true, 1, 15, 3, 0.1, 15);//machine gun
                 if(y > 350 && y < 400) s.p.weapon = new Weapon(s, false, 1, 20, 0, 1.5, 100);//sniper
             }
         }
